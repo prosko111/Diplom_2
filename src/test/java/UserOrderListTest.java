@@ -1,4 +1,10 @@
-import api.*;
+import api.Config;
+import api.courier.CreateUser;
+import api.courier.DeleteUser;
+import api.courier.UserData;
+import api.order.IngredientData;
+import api.order.Order;
+import api.order.UserOrderList;
 import io.qameta.allure.junit4.DisplayName;
 import org.junit.After;
 import org.junit.Before;
@@ -40,7 +46,6 @@ public class UserOrderListTest extends Config {
                 .and()
                 .extract()
                 .path("message");
-
         assertThat(message, equalTo("You should be authorised"));
 
     }
@@ -57,7 +62,6 @@ public class UserOrderListTest extends Config {
                 .and()
                 .extract()
                 .path("orders");
-
         assertThat(testBody.get(0), notNullValue());
 
     }

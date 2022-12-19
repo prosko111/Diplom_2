@@ -1,4 +1,8 @@
-import api.*;
+import api.Config;
+import api.courier.CreateUser;
+import api.courier.DeleteUser;
+import api.courier.Login;
+import api.courier.UserData;
 import io.qameta.allure.junit4.DisplayName;
 import io.restassured.response.Response;
 import org.junit.After;

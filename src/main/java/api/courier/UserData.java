@@ -1,4 +1,6 @@
-package api;
+package api.courier;
+
+import api.Base;
 
 public class UserData {
 
@@ -26,7 +28,6 @@ public class UserData {
         this.name = name;
     }
 
-
     public String getEmail() {
         return email;
     }
@@ -34,7 +35,6 @@ public class UserData {
     public void setEmail(String email) {
         this.email = email;
     }
-
 
     public String getPassword() {
         return password;

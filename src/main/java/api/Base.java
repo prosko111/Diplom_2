@@ -11,7 +11,6 @@ public class Base {
     public static final String LOGIN = "/api/auth/login";
     public static final String ORDERS = "/api/orders";
 
-
     public static String createMail() {
         return RandomStringUtils.randomAlphabetic(10) + "@yandex.ru";
     }
@@ -23,5 +22,4 @@ public class Base {
     public static String createUserName() {
         return RandomStringUtils.randomAlphabetic(8);
     }
-
 }

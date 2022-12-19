@@ -1,4 +1,4 @@
-package api;
+package api.courier;
 
 import com.google.gson.Gson;
 import io.qameta.allure.Step;

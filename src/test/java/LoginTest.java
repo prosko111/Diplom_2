@@ -1,4 +1,8 @@
-import api.*;
+import api.Config;
+import api.courier.CreateUser;
+import api.courier.DeleteUser;
+import api.courier.Login;
+import api.courier.UserData;
 import io.qameta.allure.junit4.DisplayName;
 import io.restassured.response.Response;
 import org.junit.After;
@@ -66,7 +70,6 @@ public class LoginTest extends Config {
                 .and()
                 .extract()
                 .path("message");
-
         assertThat(messageWithBadPassword, equalTo("email or password are incorrect"));
     }
 
@@ -82,7 +85,6 @@ public class LoginTest extends Config {
                 .and()
                 .extract()
                 .path("message");
-
         assertThat(messageWithBadEmailPassword, equalTo("email or password are incorrect"));
     }
 }

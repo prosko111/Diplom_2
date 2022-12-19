@@ -1,4 +1,4 @@
-package api;
+package api.courier;
 
 import io.qameta.allure.Step;
 

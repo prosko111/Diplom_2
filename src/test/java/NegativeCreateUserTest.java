@@ -1,6 +1,6 @@
 import api.Config;
-import api.CreateUser;
-import api.UserData;
+import api.courier.CreateUser;
+import api.courier.UserData;
 import io.qameta.allure.junit4.DisplayName;
 import io.restassured.response.Response;
 import org.junit.Before;
@@ -31,7 +31,6 @@ public class NegativeCreateUserTest extends Config {
                 .and()
                 .extract()
                 .path("message");
-
         assertThat(messageWithoutName, equalTo("Email, password and name are required fields"));
     }
 

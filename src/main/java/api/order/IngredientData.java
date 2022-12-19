@@ -1,4 +1,4 @@
-package api;
+package api.order;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -6,7 +6,6 @@ import java.util.List;
 public class IngredientData {
 
     private List<String> ingredients = new ArrayList<>();
-
 
     public IngredientData(ArrayList<String> ingredients) {
         this.ingredients = ingredients;

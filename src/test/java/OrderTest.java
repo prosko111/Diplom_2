@@ -1,4 +1,9 @@
-import api.*;
+import api.Config;
+import api.courier.CreateUser;
+import api.courier.DeleteUser;
+import api.courier.UserData;
+import api.order.IngredientData;
+import api.order.Order;
 import io.qameta.allure.junit4.DisplayName;
 import org.junit.After;
 import org.junit.Before;

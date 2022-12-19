@@ -1,4 +1,8 @@
-import api.*;
+import api.Config;
+import api.courier.CreateUser;
+import api.courier.DeleteUser;
+import api.courier.UpdateUser;
+import api.courier.UserData;
 import io.qameta.allure.junit4.DisplayName;
 import org.junit.After;
 import org.junit.Before;
@@ -35,7 +39,6 @@ public class UpdateUserTest extends Config {
                 .and()
                 .extract()
                 .path("success");
-
         assertThat(success, equalTo(true));
 
     }
@@ -52,7 +55,6 @@ public class UpdateUserTest extends Config {
                 .and()
                 .extract()
                 .path("success");
-
         assertThat(success, equalTo(true));
 
     }
@@ -69,7 +71,6 @@ public class UpdateUserTest extends Config {
                 .and()
                 .extract()
                 .path("success");
-
         assertThat(success, equalTo(true));
     }
 
@@ -85,7 +86,6 @@ public class UpdateUserTest extends Config {
                 .and()
                 .extract()
                 .path("message");
-
         assertThat(message, equalTo("You should be authorised"));
     }
 
@@ -101,7 +101,6 @@ public class UpdateUserTest extends Config {
                 .and()
                 .extract()
                 .path("message");
-
         assertThat(message, equalTo("You should be authorised"));
     }
 
@@ -117,7 +116,6 @@ public class UpdateUserTest extends Config {
                 .and()
                 .extract()
                 .path("message");
-
         assertThat(message, equalTo("You should be authorised"));
     }
 }

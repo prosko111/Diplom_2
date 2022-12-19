@@ -1,5 +1,6 @@
-package api;
+package api.order;
 
+import api.courier.CreateUser;
 import com.google.gson.Gson;
 import io.qameta.allure.Step;
 import io.restassured.response.Response;
